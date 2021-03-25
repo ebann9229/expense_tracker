@@ -5,7 +5,7 @@ import { Transaction } from './Transaction'
 import { Paginations } from './pagination'
 
 export const TransactionList = ({transactions, handleReset}) => {
-  const [tranPerPage, setTranPerPage] = useState(5)
+  const tranPerPage = 5
   const [currentPage, setCurrentPage] = useState(1);
 
   transactions.sort((a,b) =>  b.id - a.id )
